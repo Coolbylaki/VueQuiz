@@ -19,5 +19,8 @@ export default {
 			return index;
 		},
 	},
+	mounted() {
+		this.$emit("update-button");
+	},
 };
 </script>

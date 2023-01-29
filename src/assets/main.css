@@ -1,6 +1,12 @@
 * {
 	box-sizing: border-box;
 }
+
+#app {
+	max-width: 37.5%;
+	margin: 0 auto;
+}
+
 body {
 	font-size: 20px;
 	font-family: sans-serif;
@@ -10,14 +16,12 @@ body {
 
 .ctr {
 	margin: 0 auto;
-	max-width: 600px;
 	width: 100%;
 	box-sizing: border-box;
 	position: relative;
 }
 .questions-ctr {
 	position: relative;
-	width: 100%;
 }
 .question {
 	width: 100%;
@@ -120,7 +124,7 @@ body {
 }
 
 .result {
-	width: 100%;
+	max-width: 100%;
 }
 
 .reset-btn:active,
