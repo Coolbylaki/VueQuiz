@@ -103,7 +103,6 @@ export default {
 	},
 	methods: {
 		questionAnswered(is_correct) {
-			console.log(is_correct);
 			if (is_correct) {
 				this.totalCorrect++;
 			}
