@@ -4,7 +4,7 @@
 		:questions="questions"
 		:questionsAnswered="questionsAnswered"
 		@question-answered="questionAnswered" />
-	<result v-else />
+	<result v-else :totalCorrect="totalCorrect" :results="results" />
 	<div class="ctr">
 		<button type="button" class="reset-btn">Reset</button>
 	</div>
