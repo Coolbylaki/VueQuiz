@@ -1,17 +1,17 @@
 <template>
-	<transition name="fade" mode="out-in">
+	<transition-group name="fade" mode="out-in">
 		<questions
 			v-if="questionsAnswered < questions.length"
 			:questions="questions"
 			:questionsAnswered="questionsAnswered"
 			@question-answered="questionAnswered" />
 		<result v-else :totalCorrect="totalCorrect" :results="results" @update-button="updateButton" />
-	</transition>
-	<div class="ctr" v-if="showButton">
-		<button type="button" class="reset-btn" @click.prevent="reset" v-if="questionsAnswered === questions.length">
-			Reset
-		</button>
-	</div>
+		<div class="ctr" v-if="showButton">
+			<button type="button" class="reset-btn" @click.prevent="reset" v-if="questionsAnswered === questions.length">
+				Reset
+			</button>
+		</div>
+	</transition-group>
 </template>
 
 <script>
