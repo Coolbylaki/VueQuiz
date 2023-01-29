@@ -27,4 +27,4 @@ coverage
 *.sln
 *.sw?
 
-data.txt
+data.json
